@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Virginia Beach | Home</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="logo" href="index.html">Virginia Beach</a>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="historical-elements.html">Historical Elements</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="sources.html">Sources</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Coastal History • Legends • Landmarks</p>
+        <h1>Virginia Beach</h1>
+        <p class="hero-subtitle">
+          Where the Atlantic shoreline meets centuries of stories, symbols, and unforgettable legends.
+        </p>
+        <div class="hero-buttons">
+          <a class="btn primary" href="historical-elements.html">Explore History</a>
+          <a class="btn secondary" href="quiz.html">Take the Quiz</a>
+        </div>
+      </div>
+
+      <div class="hero-image-card">
+    <img src="../images/VA_Beach_Image.jpg" alt="Virginia Beach oceanfront view">
+</div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="section-heading">
+        <h2>Welcome to Virginia Beach</h2>
+        <p>
+          Virginia Beach is more than a popular beach destination. It is a city shaped by maritime culture,
+          historic places, public landmarks, and local legends that continue to capture people’s imagination.
+        </p>
+      </div>
+
+      <div class="quick-facts-grid">
+        <article class="fact-card">
+          <h3>Location</h3>
+          <p>Located on the southeastern coast of Virginia along the Atlantic Ocean.</p>
+        </article>
+
+        <article class="fact-card">
+          <h3>Known For</h3>
+          <p>Boardwalk views, coastal tourism, military history, and local folklore.</p>
+        </article>
+
+        <article class="fact-card">
+          <h3>Theme</h3>
+          <p>This site explores Virginia Beach through historical elements, legends, and cultural symbols.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <h2>Interactive Explore Tool</h2>
+        <p>
+          Use the search bar or category buttons to quickly navigate to the part of the site that matches your interest.
+        </p>
+      </div>
+
+      <div class="search-box card">
+        <input id="searchInput" type="text" placeholder="Search: witch, pirate, statue, ghost, hotel..." />
+        <button id="searchBtn" class="btn primary" type="button">Search</button>
+      </div>
+
+      <div class="category-buttons">
+        <button class="filter-btn" data-target="historical-elements.html#places">Historical Places</button>
+        <button class="filter-btn" data-target="historical-elements.html#structures">Structures</button>
+        <button class="filter-btn" data-target="historical-elements.html#events">Events</button>
+        <button class="filter-btn" data-target="historical-elements.html#legends">Legends</button>
+        <button class="filter-btn" data-target="quiz.html">Quiz Me</button>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <h2>Featured Historical Elements</h2>
+        <p>These topics introduce just a few of the stories that help define Virginia Beach.</p>
+      </div>
+
+      <div class="card-grid three-up">
+        <article class="feature-card">
+          <img src="images/grace-sherwood.jpg" alt="Grace Sherwood" />
+          <div class="card-body">
+            <h3>Grace Sherwood</h3>
+            <p>The “Witch of Pungo” remains one of the city’s most famous and mysterious historical figures.</p>
+            <a href="historical-elements.html#grace-sherwood" class="text-link">Read More</a>
+          </div>
+        </article>
+
+        <article class="feature-card">
+          <img src="images/king-neptune.jpg" alt="King Neptune statue" />
+          <div class="card-body">
+            <h3>King Neptune</h3>
+            <p>This towering statue has become a major symbol of the Virginia Beach oceanfront.</p>
+            <a href="historical-elements.html#king-neptune" class="text-link">Read More</a>
+          </div>
+        </article>
+
+        <article class="feature-card">
+          <img src="images/blackbeard.jpg" alt="Blackbeard" />
+          <div class="card-body">
+            <h3>Blackbeard</h3>
+            <p>The legendary pirate’s story adds danger, drama, and maritime mystery to coastal history.</p>
+            <a href="historical-elements.html#blackbeard" class="text-link">Read More</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="cta-content">
+        <h2>Not sure where to begin?</h2>
+        <p>Take the interactive quiz and let the site guide you to the most interesting Virginia Beach topic for you.</p>
+        <a class="btn primary" href="quiz.html">Start the Quiz</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>2026 TSA Middle School Web Design Project • Virginia Beach</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

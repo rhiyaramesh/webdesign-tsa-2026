@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Virginia Beach | Quiz</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <header class="site-header inner-header">
+    <nav class="navbar">
+      <a class="logo" href="index.html">Virginia Beach</a>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="historical-elements.html">Historical Elements</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="sources.html">Sources</a></li>
+        <li><a href="quiz.html" class="active">Quiz</a></li>
+      </ul>
+    </nav>
+
+    <section class="page-banner">
+      <h1>Virginia Beach Interest Quiz</h1>
+      <p>Answer a few quick questions and the site will guide you to the best section for you.</p>
+    </section>
+  </header>
+
+  <main>
+    <section class="section narrow">
+      <div class="quiz-card">
+        <div class="quiz-question">
+          <h2>What are you most interested in?</h2>
+          <div class="quiz-options">
+            <button class="quiz-option" data-result="historical-elements.html#legends">Legends and mystery</button>
+            <button class="quiz-option" data-result="historical-elements.html#structures">Structures and monuments</button>
+            <button class="quiz-option" data-result="historical-elements.html#places">Historical places</button>
+            <button class="quiz-option" data-result="historical-elements.html#events">Events and traditions</button>
+          </div>
+        </div>
+
+        <div class="quiz-result" id="quizResult">
+          <p>Your recommendation will appear here.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>2026 TSA Middle School Web Design Project • Virginia Beach</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
