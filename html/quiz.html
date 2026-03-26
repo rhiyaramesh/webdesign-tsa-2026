@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Virginia Beach | Quiz</title>
   <link rel="stylesheet" href="../css/styles.css" />
+  <script src="../js/script.js"></script>
 </head>
 <body>
   <header class="site-header inner-header">
@@ -21,8 +22,7 @@
     </nav>
 
     <section class="page-banner">
-      <h1>Virginia Beach Interest Quiz</h1>
-      <p>Answer a few quick questions and the site will guide you to the best section for you.</p>
+      <h1>Virginia Beach Quiz</h1>
     </section>
   </header>
 
@@ -75,7 +75,7 @@
           <label><input type="radio" name="q6" value="a"> Earth's Park</label>
           <label><input type="radio" name="q6" value="b"> Witch's Park</label>
           <label><input type="radio" name="q6" value="c"> Neptune's Park</label>
-          <label><input type="radio" name="q6" value="d"> Blackbear's Park</label>
+          <label><input type="radio" name="q6" value="d"> Blackbeard's Park</label>
         </div>
 
         <div class="quiz-question-box">
@@ -109,12 +109,14 @@
           <label><input type="radio" name="q10" value="c"> 2007</label>
           <label><input type="radio" name="q10" value="d"> 1607</label>
         </div>
+        <button type="button" onclick="checkQuiz()">Submit Quiz</button>
+        <div id="quiz-result"></div>
 
 
   <footer class="site-footer">
     <p>2026 TSA Middle School Web Design Project • Virginia Beach</p>
   </footer>
 
-  <script src="script.js"></script>
+  
 </body>
 </html>
