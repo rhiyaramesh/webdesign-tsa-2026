@@ -21,16 +21,35 @@ function checkQuiz() {
     }
   }
 
-  const resultBox = document.getElementById("quiz-result");
-  resultBox.innerHTML = `Your score: ${score}/10`;
+  const resultBox = document.getElementById("result");
+
+  let message = "";
 
   if (score === 10) {
-    resultBox.innerHTML += "<br>Excellent work!";
+    message = "Excellent work!";
   } else if (score >= 7) {
-    resultBox.innerHTML += "<br>Great job!";
+    message = "Great job!";
   } else if (score >= 5) {
-    resultBox.innerHTML += "<br>Nice try!";
+    message = "Nice try!";
   } else {
-    resultBox.innerHTML += "<br>Go back and explore more of the website!";
+    message = "Go back and explore more of the website!";
   }
+
+  resultBox.innerHTML = `
+    <div class="result-card">
+      <h2>Your Score</h2>
+      <div class="score-number">${score}/10</div>
+      <p class="score-message">${message}</p>
+    </div>
+  `;
+}
+
+function clearQuiz() {
+  const allOptions = document.querySelectorAll('input[type="radio"]');
+
+  allOptions.forEach(option => {
+    option.checked = false;
+  });
+
+  document.getElementById("result").innerHTML = "";
 }

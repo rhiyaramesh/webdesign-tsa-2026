@@ -109,8 +109,12 @@
           <label><input type="radio" name="q10" value="c"> 2007</label>
           <label><input type="radio" name="q10" value="d"> 1607</label>
         </div>
-        <button type="button" onclick="checkQuiz()">Submit Quiz</button>
-        <div id="quiz-result"></div>
+        
+        <div class="quiz-buttons">
+          <button type="button" class="btn primary" onclick="checkQuiz()">Submit Quiz</button>
+          <button type="button" class="btn secondary" onclick="clearQuiz()">Clear Answers</button>
+        </div>
+        <div id="result" class="quiz-result-box"></div>
 
 
   <footer class="site-footer">
