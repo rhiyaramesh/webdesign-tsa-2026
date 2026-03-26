@@ -13,9 +13,9 @@
       <button class="menu-toggle" aria-label="Open menu">☰</button>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="historical-elements.html">Historical Elements</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="sources.html">Sources</a></li>
+        <li><a href="historical-elements.html">Explore History</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="references.html">References</a></li>
         <li><a href="quiz.html" class="active">Quiz</a></li>
       </ul>
     </nav>
@@ -26,25 +26,90 @@
     </section>
   </header>
 
-  <main>
+<main>
     <section class="section narrow">
-      <div class="quiz-card">
-        <div class="quiz-question">
-          <h2>What are you most interested in?</h2>
-          <div class="quiz-options">
-            <button class="quiz-option" data-result="historical-elements.html#legends">Legends and mystery</button>
-            <button class="quiz-option" data-result="historical-elements.html#structures">Structures and monuments</button>
-            <button class="quiz-option" data-result="historical-elements.html#places">Historical places</button>
-            <button class="quiz-option" data-result="historical-elements.html#events">Events and traditions</button>
-          </div>
+      <form id="quizForm" class="quiz-form">
+
+        <div class="quiz-question-box">
+          <h3>1. In what year did a mass shooting occur in a municipal building in VA Beach?</h3>
+          <label><input type="radio" name="q1" value="a"> 1906</label>
+          <label><input type="radio" name="q1" value="b"> 2019</label>
+          <label><input type="radio" name="q1" value="c"> 2007</label>
+          <label><input type="radio" name="q1" value="d"> 1607</label>
         </div>
 
-        <div class="quiz-result" id="quizResult">
-          <p>Your recommendation will appear here.</p>
+        <div class="quiz-question-box">
+          <h3>2. What was the very first name for Virginia Beach?</h3>
+          <label><input type="radio" name="q2" value="a"> Princess Anne County</label>
+          <label><input type="radio" name="q2" value="b"> Cape Henry</label>
+          <label><input type="radio" name="q2" value="c"> Williamsburg</label>
+          <label><input type="radio" name="q2" value="d"> Aquatown</label>
         </div>
-      </div>
-    </section>
-  </main>
+
+        <div class="quiz-question-box">
+          <h3>3. What is the name of Virginia Beach’s premium luxury resort?</h3>
+          <label><input type="radio" name="q3" value="a"> Wyndham Rejuvenation Resort</label>
+          <label><input type="radio" name="q3" value="b"> Hilton</label>
+          <label><input type="radio" name="q3" value="c"> Marriot</label>
+          <label><input type="radio" name="q3" value="d"> Grand Cavalier Hotel</label>
+        </div>
+
+        <div class="quiz-question-box">
+          <h3>4. What historical structure is located near the “First Landing” site?</h3>
+          <label><input type="radio" name="q4" value="a"> Cape Henry Lighthouse</label>
+          <label><input type="radio" name="q4" value="b"> Grand Cavalier Hotel</label>
+          <label><input type="radio" name="q4" value="c"> First Landing State Park</label>
+          <label><input type="radio" name="q4" value="d"> Eiffel Tower</label>
+        </div>
+
+        <div class="quiz-question-box">
+          <h3>5. What is the name of the ghost of the Grand Cavalier Hotel?</h3>
+          <label><input type="radio" name="q5" value="a"> King Neptune</label>
+          <label><input type="radio" name="q5" value="b"> Blackbeard</label>
+          <label><input type="radio" name="q5" value="c"> Adolph Coors</label>
+          <label><input type="radio" name="q5" value="d"> Scarlett</label>
+        </div>
+
+        <div class="quiz-question-box">
+          <h3>6. What park is named after a Roman god of the Sea?</h3>
+          <label><input type="radio" name="q6" value="a"> Earth's Park</label>
+          <label><input type="radio" name="q6" value="b"> Witch's Park</label>
+          <label><input type="radio" name="q6" value="c"> Neptune's Park</label>
+          <label><input type="radio" name="q6" value="d"> Blackbear's Park</label>
+        </div>
+
+        <div class="quiz-question-box">
+          <h3>7. What was the name of the first witch in Virginia Beach?</h3>
+          <label><input type="radio" name="q7" value="a"> Queen Neptune</label>
+          <label><input type="radio" name="q7" value="b"> Eleanor Sanders</label>
+          <label><input type="radio" name="q7" value="c"> Amanda</label>
+          <label><input type="radio" name="q7" value="d"> Grace Sherwood</label>
+        </div>
+
+        <div class="quiz-question-box">
+          <h3>8. What is the name of the festival, celebrating the heritage and culture of VA Beach?</h3>
+          <label><input type="radio" name="q8" value="a"> Neptune's Festival</label>
+          <label><input type="radio" name="q8" value="b"> The Maple Leaf Escape</label>
+          <label><input type="radio" name="q8" value="c"> The Kite Festival</label>
+          <label><input type="radio" name="q8" value="d"> Festival of America</label>
+        </div>
+
+        <div class="quiz-question-box">
+          <h3>9. What was the name of the notorious pirate who captured 40 ships?</h3>
+          <label><input type="radio" name="q9" value="a"> King Neptune</label>
+          <label><input type="radio" name="q9" value="b"> Grace Sherwood</label>
+          <label><input type="radio" name="q9" value="c"> Blackbeard</label>
+          <label><input type="radio" name="q9" value="d"> Adolph Coors</label>
+        </div>
+
+        <div class="quiz-question-box">
+          <h3>10. When was the iconic VA Beach boardwalk built?</h3>
+          <label><input type="radio" name="q10" value="a"> 1906</label>
+          <label><input type="radio" name="q10" value="b"> 1963</label>
+          <label><input type="radio" name="q10" value="c"> 2007</label>
+          <label><input type="radio" name="q10" value="d"> 1607</label>
+        </div>
+
 
   <footer class="site-footer">
     <p>2026 TSA Middle School Web Design Project • Virginia Beach</p>

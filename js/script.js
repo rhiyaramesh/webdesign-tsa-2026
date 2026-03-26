@@ -1,71 +1,36 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const menuToggle = document.querySelector(".menu-toggle");
-  const navLinks = document.querySelector(".nav-links");
+function checkQuiz() {
+  let score = 0;
 
-  if (menuToggle && navLinks) {
-    menuToggle.addEventListener("click", () => {
-      navLinks.classList.toggle("show");
-    });
-  }
+  const answers = {
+    q1: "b",
+    q2: "b",
+    q3: "d",
+    q4: "a",
+    q5: "c",
+    q6: "c",
+    q7: "d",
+    q8: "a",
+    q9: "c",
+    q10: "a"
+  };
 
-  const filterButtons = document.querySelectorAll(".filter-btn");
-  filterButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      window.location.href = button.dataset.target;
-    });
-  });
-
-  const searchInput = document.getElementById("searchInput");
-  const searchBtn = document.getElementById("searchBtn");
-
-  function runSearch() {
-    if (!searchInput) return;
-
-    const value = searchInput.value.trim().toLowerCase();
-
-    if (value.includes("witch") || value.includes("grace")) {
-      window.location.href = "historical-elements.html#grace-sherwood";
-    } else if (value.includes("pirate") || value.includes("blackbeard")) {
-      window.location.href = "historical-elements.html#blackbeard";
-    } else if (value.includes("statue") || value.includes("neptune")) {
-      window.location.href = "historical-elements.html#king-neptune";
-    } else if (value.includes("ghost") || value.includes("hotel") || value.includes("cavalier")) {
-      window.location.href = "historical-elements.html#legends";
-    } else if (value.includes("place")) {
-      window.location.href = "historical-elements.html#places";
-    } else if (value.includes("event") || value.includes("festival")) {
-      window.location.href = "historical-elements.html#events";
-    } else {
-      alert("Try keywords like witch, pirate, statue, ghost, hotel, place, or festival.");
+  for (let question in answers) {
+    const selected = document.querySelector(`input[name="${question}"]:checked`);
+    if (selected && selected.value === answers[question]) {
+      score++;
     }
   }
 
-  if (searchBtn) {
-    searchBtn.addEventListener("click", runSearch);
+  const resultBox = document.getElementById("quiz-result");
+  resultBox.innerHTML = `Your score: ${score}/10`;
+
+  if (score === 10) {
+    resultBox.innerHTML += "<br>Excellent work!";
+  } else if (score >= 7) {
+    resultBox.innerHTML += "<br>Great job!";
+  } else if (score >= 5) {
+    resultBox.innerHTML += "<br>Nice try!";
+  } else {
+    resultBox.innerHTML += "<br>Go back and explore more of the website!";
   }
-
-  if (searchInput) {
-    searchInput.addEventListener("keydown", (event) => {
-      if (event.key === "Enter") {
-        runSearch();
-      }
-    });
-  }
-
-  const quizOptions = document.querySelectorAll(".quiz-option");
-  const quizResult = document.getElementById("quizResult");
-
-  quizOptions.forEach((option) => {
-    option.addEventListener("click", () => {
-      const resultLink = option.dataset.result;
-
-      if (quizResult) {
-        quizResult.innerHTML = `
-          <h3>Recommended Section</h3>
-          <p>Based on your choice, you may enjoy this part of the site most.</p>
-          <a class="btn primary" href="${resultLink}">Go to Recommendation</a>
-        `;
-      }
-    });
-  });
-});
+}
