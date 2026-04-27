@@ -30,6 +30,7 @@ body {
 
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
 }
 
 img {
@@ -145,7 +146,7 @@ img {
   width: 100%;
   height: 180px;
   object-fit: cover;
-  border-radius: 15px;
+  border-radius: 20px;
   margin-bottom: 12px;
 
 }
@@ -403,7 +404,7 @@ img {
   width: 100%;
   height: 220px;
   object-fit: cover;
-  border-radius: 16px;
+  border-radius: 20px;
   object-fit: contain;
 }
 
@@ -442,7 +443,7 @@ img {
   width: 100%;
   height: 180px;
   object-fit: cover;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 
  .category-card h3 {
@@ -598,6 +599,7 @@ img {
   margin: 0 auto 14px;
   display: block;
   align-items: center;
+  border-radius: 20px;
 }
 
 .story-row {
@@ -662,4 +664,8 @@ img {
 .score-message {
   font-size: 1.1rem;
   color: var(--text);
+}
+
+.story-card p {
+  font-family: 'Inter', sans-serif;
 }
