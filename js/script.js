@@ -2,7 +2,7 @@ function checkQuiz() {
   let score = 0;
 
   const answers = {
-    q1: "b",
+    q1: "d",
     q2: "b",
     q3: "d",
     q4: "a",
