@@ -21,7 +21,14 @@ html {
 body {
   margin: 0;
   color: var(--text);
-  background: linear-gradient(to bottom, #f9fcff, #eef6fb);
+  /* background: linear-gradient(to bottom, #f9fcff, #eef6fb); */
+  background: linear-gradient(
+    to bottom,
+    #dff3ff 0%,
+    #eef7fb 35%,
+    #fdf6ec 70%,
+    #dff3ff 100%
+  );
 }
 
 body {
@@ -50,7 +57,8 @@ img {
   padding: 1rem 1.2rem;
   position: sticky;
   top: 0;
-  background: rgba(255,255,255,0.92);
+  /* background: rgba(255,255,255,0.92); */
+  background: #fffdf9;
   backdrop-filter: blur(8px);
   z-index: 1000;
   box-shadow: 0 2px 12px rgba(0,0,0,0.05);
@@ -218,7 +226,11 @@ img {
 .fact-card,
 .feature-card,
 .simple-card {
-  background: var(--white);
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.95),
+    rgba(245,250,255,0.92)
+  );
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
@@ -292,7 +304,8 @@ img {
 }
 
 .alt-section {
-  background: rgba(234, 244, 255, 0.55);
+  /* background: rgba(234, 244, 255, 0.55); */
+  background: #fffdf9;
 }
 
 .narrow {
@@ -397,6 +410,7 @@ img {
   margin: 0 auto;
   padding: 2.5rem 1.2rem 3rem;
   text-align: center;
+
 }
 
 .story-card img,
@@ -668,4 +682,66 @@ img {
 
 .story-card p {
   font-family: 'Lora', serif;
+}
+
+/* For quiz boxes */
+
+.quiz-form {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.quiz-question-box {
+  background: white;
+  padding: 24px;
+  margin-bottom: 22px;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+.quiz-question-box h3 {
+  color: var(--navy);
+  margin-bottom: 15px;
+}
+
+.quiz-question-box label {
+  display: block;
+  background: #f8fbff;
+  padding: 12px 14px;
+  margin: 10px 0;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.quiz-question-box label:hover {
+  background: var(--light-blue);
+}
+
+.quiz-question-box input {
+  margin-right: 8px;
+}
+
+.quiz-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.quiz-result-box {
+  margin: 25px auto 0;
+  max-width: 500px;
+  padding: 20px;
+  background: var(--light-blue);
+  color: var(--navy);
+  border-radius: 18px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 700px) {
+  .quiz-buttons {
+    flex-direction: column;
+  }
 }
