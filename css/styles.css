@@ -4,7 +4,7 @@
   --light-blue: #eaf4ff;
   --white: #ffffff;
   --text: #1f2937;
-  --shadow: 0 12px 30px rgba(15, 47, 89, 0.12);
+  --shadow: 0 12px 30px rgba(181, 156, 120, 0.27);
   --radius: 20px;
 }
 
@@ -21,14 +21,8 @@ html {
 body {
   margin: 0;
   color: var(--text);
-  /* background: linear-gradient(to bottom, #f9fcff, #eef6fb); */
-  background: linear-gradient(
-    to bottom,
-    #dff3ff 0%,
-    #eef7fb 35%,
-    #fdf6ec 70%,
-    #dff3ff 100%
-  );
+  background: #e9f2f7;
+  ;
 }
 
 body {
@@ -36,7 +30,7 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.2rem;
 }
 
@@ -47,7 +41,7 @@ img {
 }
 
 .site-header {
-  background: linear-gradient(135deg, #dcefff, #f6fbff);
+  background: linear-gradient(135deg, #cfe6fa, #e7f3fb);
 }
 
 .navbar {
@@ -57,11 +51,10 @@ img {
   padding: 1rem 1.2rem;
   position: sticky;
   top: 0;
-  /* background: rgba(255,255,255,0.92); */
   background: #fffdf9;
   backdrop-filter: blur(8px);
   z-index: 1000;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 18px rgba(15, 47, 89, 0.10);
 }
 
 .logo {
@@ -304,7 +297,6 @@ img {
 }
 
 .alt-section {
-  /* background: rgba(234, 244, 255, 0.55); */
   background: #fffdf9;
 }
 
@@ -681,7 +673,7 @@ img {
 }
 
 .story-card p {
-  font-family: 'Lora', serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* For quiz boxes */
